@@ -4,13 +4,12 @@ public class Week3Class {
    public static int Task1(int[] nums, int searchedNum) {
       int index = 0;
       for (int i = 0; i < nums.length; i++) {
-         if (nums[i] == searchedNum)
+         if (nums[i] == searchedNum) {
             if (i < 5)
                continue;
-            else {
-               index = i;
-               break;
-            }
+            index = i;
+            break;
+         }
       }
       return nums[index];
    }
